@@ -1,0 +1,43 @@
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#navigation {
+  background-image: url("../img/background-top.jpg");
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  height: 1000px;
+}
+
+#navigation .navbar {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f1f28+0,1f1f28+97&1+0,0.03+97 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f1f28), color-stop(97%, rgba(31, 31, 40, 0.03))) !important;
+  background: linear-gradient(to bottom, #1f1f28 0%, rgba(31, 31, 40, 0.03) 97%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f28', endColorstr='#081f1f28',GradientType=0 ) !important;
+  /* IE6-9 */
+}
+
+#navigation .navbar .navbar-nav a {
+  color: #fff !important;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+#navigation .navbar .navbar-nav a:hover {
+  color: #ed485c !important;
+}
+
+#navigation .triangle {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */
