@@ -1,3 +1,4 @@
+    $color-pink: #ed485c;
 body{
     max-width: 1600px;
     margin: 0 auto;
@@ -23,13 +24,35 @@ body{
                 font-size: 15px;
             }
             a:hover{
-                color: #ed485c !important;
+                color: $color-pink !important;
             }
         }
+        //Start change logo
+        .image_off, #home:hover .image_on{
+            display: none;
+         }
+         .image_on, #home:hover .image_off{
+            display: block;
+         }
+         //End change logo 
+         .navbar-toggler{
+             border-color: #fff !important; 
+             color: #fff !important;
+             outline: none !important;
+             .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+              }
+        }
+
+      
     }
     .triangle{
+        max-width: 979px;
         top: 50%;
         left: 50%;
         transform:translate(-50%, -50%);
+        svg{
+            background: url(100px-wide-no-height-or-ratio.svg);
+            background-size: 200px auto;        }
     }
   }

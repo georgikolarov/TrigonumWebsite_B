@@ -34,10 +34,34 @@ body {
   color: #ed485c !important;
 }
 
+#navigation .navbar .image_off, #navigation .navbar #home:hover .image_on {
+  display: none;
+}
+
+#navigation .navbar .image_on, #navigation .navbar #home:hover .image_off {
+  display: block;
+}
+
+#navigation .navbar .navbar-toggler {
+  border-color: #fff !important;
+  color: #fff !important;
+  outline: none !important;
+}
+
+#navigation .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 #navigation .triangle {
+  max-width: 979px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#navigation .triangle svg {
+  background: url(100px-wide-no-height-or-ratio.svg);
+  background-size: 200px auto;
 }
 /*# sourceMappingURL=style.css.map */
