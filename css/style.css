@@ -9,7 +9,7 @@ body {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  height: 1000px;
+  height: 998px;
 }
 
 #navigation .navbar {
@@ -19,8 +19,10 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#1f1f28), color-stop(97%, rgba(31, 31, 40, 0.03))) !important;
   background: linear-gradient(to bottom, #1f1f28 0%, rgba(31, 31, 40, 0.03) 97%) !important;
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f28', endColorstr='#081f1f28',GradientType=0 ) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f28', endColorstr='#081f1f28', GradientType=0) !important;
   /* IE6-9 */
+  /* Start of Navbar hamburger animation*/
+  /*End of Navbar hamburger animation*/
 }
 
 #navigation .navbar .navbar-nav a {
@@ -34,34 +36,135 @@ body {
   color: #ed485c !important;
 }
 
-#navigation .navbar .image_off, #navigation .navbar #home:hover .image_on {
+#navigation .navbar .image_off,
+#navigation .navbar #home:hover .image_on {
   display: none;
 }
 
-#navigation .navbar .image_on, #navigation .navbar #home:hover .image_off {
+#navigation .navbar .image_on,
+#navigation .navbar #home:hover .image_off {
   display: block;
 }
 
 #navigation .navbar .navbar-toggler {
-  border-color: #fff !important;
-  color: #fff !important;
-  outline: none !important;
+  border: none;
 }
 
-#navigation .navbar .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+#navigation .navbar .navbar-toggler:focus {
+  outline: none;
+}
+
+#navigation .navbar .navbar-toggler .icon-bar {
+  background-color: #fff;
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
+}
+
+#navigation .navbar .navbar-toggler .icon-bar {
+  display: block;
+  width: 28px;
+  height: 4px;
+  border-radius: 1px;
+}
+
+#navigation .navbar .navbar-toggler .icon-bar {
+  margin-top: 4px;
+}
+
+#navigation .navbar .icon-bar:nth-child(2) {
+  width: 22px;
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
+}
+
+#navigation .navbar .navbar-toggler:hover > .icon-bar:nth-child(2) {
+  width: 22px;
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
+}
+
+#navigation .navbar .navbar-toggler:active > .icon-bar:nth-child(2) {
+  width: 28px;
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
+}
+
+#navigation .navbar .navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 4px);
+          transform: rotate(45deg) translate(5px, 4px);
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
+}
+
+#navigation .navbar .navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
+}
+
+#navigation .navbar .navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(6px, -6px);
+          transform: rotate(-45deg) translate(6px, -6px);
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
 }
 
 #navigation .triangle {
-  max-width: 979px;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-#navigation .triangle svg {
-  background: url(100px-wide-no-height-or-ratio.svg);
-  background-size: 200px auto;
+#navigation .moreInfo {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  text-align: center;
+}
+
+#navigation .moreInfo p {
+  font-size: 22px;
+  color: #fff;
+}
+
+#navigation .moreInfo .image_off,
+#navigation .moreInfo #home:hover .image_on {
+  display: none;
+}
+
+#navigation .moreInfo .image_on,
+#navigation .moreInfo #home:hover .image_off {
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  .triangle img {
+    max-width: 600px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .triangle img {
+    max-width: 500px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #navigation {
+    height: 600px;
+  }
+  .triangle img {
+    max-width: 350px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .triangle img {
+    max-width: 250px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
