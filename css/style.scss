@@ -5,7 +5,7 @@
         font-family: 'Open Sans', sans-serif;
     }
 
-    #navigation {
+    #sectionTop {
         background-image: url('../img/background-top.jpg');
         background-position: center;
         background-size: cover;
@@ -110,6 +110,95 @@
             #home:hover .image_off {
                 display: inline-block;
             } //End Animation arrowBottom
+        }
+    }
+
+    #main {
+        .ourWork {
+            .info {
+                color: #58667f !important;
+                .image {
+                    margin: 40px 0px 40px 0px;
+                }
+                strong {
+                    h2 {
+                        margin: 0px;
+                    }
+                    margin-bottom: 40px;
+                }
+                p {
+                    font-weight: 400;
+                    font-style: italic;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        .owl-nav {
+            display: inline-block;
+        }
+        .owl-carousel {
+            .item {
+                div,
+                h4 {
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 12px;
+                    font-weight: 400px;
+                    font-style: italic;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel button.owl-dot {
+            font-size: 60px;
+            position: absolute;
+            left: -4%;
+            top: 38%;
+        }
+        button.owl-prev:hover,
+        button.owl-next:hover {
+            background: none;
+        }
+        .owl-carousel .owl-nav button.owl-next,
+        .owl-carousel button.owl-dot {
+            position: absolute;
+            right: -4%;
+            top: 38%;
+            font-size: 60px;
+        }
+        button {
+            span {
+                color: $color-pink;
+            }
+        }
+        button:focus {
+            outline: none;
+        }
+        .aboutUs {
+            background-image: url('../img/backgrund2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 323px;
+            .info {
+                color: #fff;
+                .image {
+                    margin: 40px 0px 40px 0px;
+                }
+                strong {
+                    h2 {
+                        margin: 0px;
+                    }
+                    margin-bottom: 40px;
+                }
+                p {
+                    font-weight: 400;
+                    font-style: italic;
+                    letter-spacing: 2px;
+                }
+            }
         }
     }
 
