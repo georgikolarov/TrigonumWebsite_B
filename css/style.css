@@ -1,7 +1,12 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   max-width: 1600px;
   margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 #sectionTop {
@@ -141,6 +146,10 @@ body {
   display: inline-block;
 }
 
+#main {
+  background-color: #f3f3f3;
+}
+
 #main .ourWork .info {
   color: #58667f !important;
 }
@@ -167,20 +176,20 @@ body {
   display: inline-block;
 }
 
-#main .owl-carousel .item div,
-#main .owl-carousel .item h4 {
+#main .owl-one .item div,
+#main .owl-one .item h4 {
   margin-bottom: 20px;
 }
 
-#main .owl-carousel .item p {
+#main .owl-one .item p {
   font-size: 12px;
   font-weight: 400px;
   font-style: italic;
   letter-spacing: 2px;
 }
 
-#main .owl-carousel .owl-nav button.owl-prev,
-#main .owl-carousel button.owl-dot {
+#main .owl-one .owl-nav button.owl-prev,
+#main .owl-one button.owl-dot {
   font-size: 60px;
   position: absolute;
   left: -4%;
@@ -192,8 +201,8 @@ body {
   background: none;
 }
 
-#main .owl-carousel .owl-nav button.owl-next,
-#main .owl-carousel button.owl-dot {
+#main .owl-one .owl-nav button.owl-next,
+#main .owl-one button.owl-dot {
   position: absolute;
   right: -4%;
   top: 38%;
@@ -221,11 +230,11 @@ body {
 }
 
 #main .aboutUs .info .image {
-  margin: 40px 0px 40px 0px;
+  margin: 40px 0px 30px 0px;
 }
 
 #main .aboutUs .info strong {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 #main .aboutUs .info strong h2 {
@@ -236,6 +245,159 @@ body {
   font-weight: 400;
   font-style: italic;
   letter-spacing: 2px;
+}
+
+#main .ourTeam {
+  color: #58667f;
+}
+
+#main .ourTeam h4 {
+  margin: 15px 0px 5px 0px;
+  color: #ed485c;
+}
+
+#main .ourTeam ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#main .ourTeam ul li {
+  font-size: 20px;
+  color: #58667f;
+}
+
+#main .ourTeam ul a {
+  text-decoration: none;
+  color: #58667f;
+}
+
+#main .ourTeam ul a:hover {
+  color: #2d4b81;
+}
+
+#main .ourTeam ul li:not(:last-child) {
+  padding-right: 20px;
+}
+
+#main .ourClients {
+  background-image: url("../img/background3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 377px;
+}
+
+#main .ourClients h2 {
+  color: #ed485c;
+}
+
+#main .ourClients .image,
+#main .ourClients h2 {
+  padding: 40px 0px 60px 0px;
+}
+
+#main .ourClients .owl-two .item div,
+#main .ourClients .owl-two .item h4 {
+  margin-bottom: 20px;
+}
+
+#main .ourClients .owl-two .item p {
+  font-size: 12px;
+  font-weight: 400px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+#main .ourClients .owl-two .owl-nav button.owl-prev,
+#main .ourClients .owl-two button.owl-dot {
+  font-size: 60px;
+  position: absolute;
+  left: -6%;
+  top: -24%;
+}
+
+#main .ourClients button.owl-prev:hover,
+#main .ourClients button.owl-next:hover {
+  background: none;
+}
+
+#main .ourClients .owl-two .owl-nav button.owl-next,
+#main .ourClients .owl-two button.owl-dot {
+  position: absolute;
+  right: -8%;
+  top: -24%;
+  font-size: 60px;
+}
+
+#main .ourClients button span {
+  color: #6d6865;
+}
+
+#main .ourClients button:focus {
+  outline: none;
+}
+
+#main .ourProjects {
+  /* clearfix */
+  /* ---- grid-item ---- */
+}
+
+#main .ourProjects .works .image {
+  padding: 40px 0px 40px 0px;
+}
+
+#main .ourProjects .works strong {
+  padding: 0px 0px 40px 0px;
+  color: #58667f;
+}
+
+#main .ourProjects .works ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#main .ourProjects .works ul li {
+  width: 100px;
+  color: red;
+}
+
+#main .ourProjects .works ul li a {
+  display: block;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  border: 1px solid #ed485c;
+  color: #ed485c;
+}
+
+#main .ourProjects .works ul li a:hover {
+  color: #fff;
+  background-color: #ed485c;
+}
+
+#main .ourProjects .works ul li:first-child a {
+  color: #fff;
+  background-color: #ed485c;
+}
+
+#main .ourProjects .works ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+#main .ourProjects .grid {
+  background: #EEE;
+  /* center */
+  margin: 0 auto;
+}
+
+#main .ourProjects .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#main .ourProjects .grid-item {
+  width: 320px;
+  height: 243px;
+  float: left;
 }
 
 @media (max-width: 992px) {

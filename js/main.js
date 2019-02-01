@@ -8,7 +8,7 @@ $(window).on('resize', function () {
         $(this).height($(this).width());
     });
 });
-$('.owl-carousel').owlCarousel({
+$('.owl-one').owlCarousel({
     loop: true,
     margin: 50,
     nav: true,
@@ -25,3 +25,25 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+$('.owl-two').owlCarousel({
+    loop: true,
+    margin: 50,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+})
+$('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 320,
+    isFitWidth: true
+});
