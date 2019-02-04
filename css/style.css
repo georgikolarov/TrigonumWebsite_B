@@ -400,6 +400,133 @@ body {
   float: left;
 }
 
+#main .ourBlog {
+  color: #58667f;
+}
+
+#main .ourBlog .blog .image {
+  padding: 40px 0px 40px 0px;
+}
+
+#main .ourBlog .blog strong {
+  padding: 0px 0px 40px 0px;
+  color: #58667f;
+}
+
+#main .ourBlog .todayDate,
+#main .ourBlog .comments {
+  position: relative;
+}
+
+#main .ourBlog .todayDate:before,
+#main .ourBlog .comments:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f073";
+  font-weight: 900;
+  display: inline-block;
+  padding-right: 6px;
+  vertical-align: middle;
+}
+
+#main .ourBlog .todayDate:before {
+  content: "\f073";
+}
+
+#main .ourBlog .comments::before {
+  content: "\f086";
+}
+
+#main .ourBlog .titleCard {
+  margin: 0px 0px 20px 0px;
+}
+
+#main .ourBlog p {
+  margin: 0px 0px 30px 0px;
+}
+
+#main .ourBlog p:nth-child(2) {
+  margin-top: 0px !important;
+}
+
+#main .getUpdate {
+  color: #fff;
+  background-image: url("../img/background4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 269px;
+}
+
+#main .getUpdate .content ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#main .getUpdate .content ul li {
+  margin-right: 15px;
+}
+
+#main .getUpdate .content ul .triangle {
+  display: block;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 37px solid transparent;
+  border-right: 37px solid transparent;
+  border-top: 53px solid red;
+  color: #fff;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+#main .getUpdate .content ul .triangle.color_fb {
+  border-top-color: #58667f;
+}
+
+#main .getUpdate .content ul .triangle.color_fb:hover {
+  border-top-color: #88667f;
+}
+
+#main .getUpdate .content ul .triangle.color_g {
+  border-top-color: #db412e;
+}
+
+#main .getUpdate .content ul .triangle.color_g:hover {
+  border-top-color: #904940;
+}
+
+#main .getUpdate .content ul .triangle.color_tw {
+  border-top-color: #24b1d4;
+}
+
+#main .getUpdate .content ul .triangle.color_tw:hover {
+  border-top-color: #146b80;
+}
+
+#main .getUpdate .content ul .triangle.color_in {
+  border-top-color: #2671ae;
+}
+
+#main .getUpdate .content ul .triangle.color_in:hover {
+  border-top-color: #61a1d5;
+}
+
+#main .getUpdate .content ul .triangle.color_pt {
+  border-top-color: #cb2027;
+}
+
+#main .getUpdate .content ul .triangle.color_pt:hover {
+  border-top-color: #b44c50;
+}
+
+#main .getUpdate .content ul .triangle i {
+  position: absolute;
+  top: -46px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 25px;
+}
+
 @media (max-width: 992px) {
   .triangle img {
     max-width: 600px !important;
