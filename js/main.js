@@ -10,7 +10,7 @@ $(window).on('resize', function () {
 });
 $('.owl-one').owlCarousel({
     loop: true,
-    margin: 50,
+    margin: 82,
     nav: true,
     dots: false,
     responsive: {
@@ -18,7 +18,7 @@ $('.owl-one').owlCarousel({
             items: 1
         },
         600: {
-            items: 3
+            items: 2
         },
         1000: {
             items: 4
@@ -35,10 +35,10 @@ $('.owl-two').owlCarousel({
             items: 1
         },
         600: {
-            items: 3
+            items: 2
         },
         1000: {
-            items: 4
+            items: 3
         }
     }
 })
