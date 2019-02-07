@@ -198,11 +198,13 @@ body {
   letter-spacing: 2px;
 }
 
-#main .info > p {
+#main .info p {
   max-width: 966px;
   font-size: 18px;
   margin-bottom: 85px;
   padding: 0px 30px 0px 30px;
+  font-family: "Open Sans Light Italic", sans-serif;
+  letter-spacing: 2px;
 }
 
 #main h2 {
@@ -229,13 +231,6 @@ body {
 
 #main .ourWork .info {
   color: #58667f !important;
-}
-
-#main .ourWork .info p {
-  font-family: "Open Sans Light Italic", sans-serif;
-  font-size: 18px;
-  font-style: italic;
-  letter-spacing: 2px;
 }
 
 #main .owl-nav {
@@ -288,7 +283,10 @@ body {
   height: 100%;
 }
 
-#main .aboutUs .info,
+#main .aboutUs .info {
+  color: #fff;
+}
+
 #main .aboutUs h2 {
   line-height: normal;
   color: #fff;
@@ -616,12 +614,14 @@ body {
 }
 
 #main .getUpdate .content ul {
+  display: block;
   list-style: none;
   padding-left: 0px;
+  margin-bottom: 0px;
 }
 
-#main .getUpdate .content ul li:not:last-child {
-  margin-right: 15px;
+#main .getUpdate .content ul li:not(:last-child) {
+  margin-right: 30px;
 }
 
 #main .getUpdate .content ul .triangle {
@@ -686,26 +686,110 @@ body {
   font-size: 25px;
 }
 
-#main .getUpdate .content .subscribe .form-control {
-  padding: 25px 200px 25px 30px;
-  margin-right: 35px;
-  height: 54px;
-  border-radius: 0 !important;
-  color: #97a5b7;
-  font-family: "Open Sans Regular", sans-serif;
+#main .getUpdate .content .input-group {
+  width: 50%;
 }
 
-#main .getUpdate .content .subscribe .btn {
-  padding: 14px 40px 14px 40px;
-  color: #fff;
-  background-color: #ed485c;
-  border-radius: 0;
+#main .getUpdate .content .input-group .form-control {
+  border-radius: 0px;
+  margin-right: 20px;
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 18px;
+  padding: 25px 0px 25px 20px;
+}
+
+#main .getUpdate .content .input-group .btn {
+  line-height: 0;
   text-transform: uppercase;
+  border-radius: 0px;
+  background: #ed485c;
+  color: #fff;
+  font-family: "Open Sans Semibold", sans-serif;
+  font-size: 20px;
+  padding: 20px 25px 20px 25px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#main .getUpdate .content .input-group .btn:hover {
+  background-color: #be2638;
+}
+
+#main .contactUs .info {
+  color: #58667f;
+}
+
+#main .contactUs .contactForm {
+  color: #58667f;
+  line-height: 1;
+}
+
+#main .contactUs .contactForm address {
+  max-width: 250px;
+  font-size: 18px;
+}
+
+#main .contactUs .contactForm h5 {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#main .contactUs .contactForm p {
+  font-style: italic;
+}
+
+#main .contactUs .contactForm p a {
+  color: #ed485c;
+}
+
+#main .contactUs .contactForm p:nth-child(2),
+#main .contactUs .contactForm p:nth-child(4) {
+  margin-bottom: 40px;
+}
+
+#main .contactUs .form {
+  margin-bottom: 54px;
+}
+
+#main .contactUs .form h2 {
+  font-size: 27px;
+  margin-bottom: 30px;
   font-family: "Open Sans Semibold", sans-serif;
 }
 
-#main .getUpdate .content .subscribe .btn:hover {
-  background-color: #c65e6b;
+#main .contactUs .form .input-group {
+  margin-bottom: 25px;
+}
+
+#main .contactUs .form .input-group .form-control {
+  margin-right: 30px;
+  padding: 10px 20px 42px 30px;
+}
+
+#main .contactUs .form .input-group .form-control:last-child {
+  padding: 10px 20px 100px 20px;
+}
+
+#main .contactUs .form .input-group .input-group-append {
+  font-size: 27px;
+}
+
+#main .contactUs .form .btn {
+  line-height: 0;
+  text-transform: uppercase;
+  border-radius: 0px;
+  background: #ed485c;
+  color: #fff;
+  font-family: "Open Sans Semibold", sans-serif;
+  font-size: 20px;
+  padding: 20px 45px;
+  margin-right: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#main .contactUs .form .btn:hover {
+  background-color: #be2638;
 }
 
 @media (max-width: 1200px) {
@@ -729,7 +813,10 @@ body {
             align-items: center;
   }
   .getUpdate .content ul {
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
+  }
+  .getUpdate .content .input-group {
+    width: 80% !important;
   }
   #main .ourBlog .row > div {
     padding: 0 10px 0 10px;
@@ -804,7 +891,13 @@ body {
     top: 30%;
     font-size: 60px;
   }
-  .subscribe .input-group {
+  #sectionTop .triangle img {
+    max-width: 350px !important;
+  }
+  .getUpdate ul li:not(:last-child) {
+    margin-right: 5px !important;
+  }
+  .getUpdate .input-group {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -816,15 +909,12 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .subscribe .form-control {
-    margin-right: 0px !important;
-    height: 54px;
+  .getUpdate .input-group .form-control {
+    width: 100% !important;
+    margin-right: 0 !important;
   }
-  .subscribe .btn {
-    width: 250px;
-  }
-  #sectionTop .triangle img {
-    max-width: 350px !important;
+  .getUpdate .input-group .input-group-append {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
